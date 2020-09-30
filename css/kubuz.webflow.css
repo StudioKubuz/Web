@@ -296,7 +296,7 @@ img {
 
 .heading-3 {
   position: relative;
-  padding-left: 10px;
+  padding-left: 0px;
   font-family: Montserrat, sans-serif;
 }
 
@@ -326,7 +326,7 @@ img {
   right: auto;
   bottom: auto;
   display: block;
-  width: auto;
+  width: 50%;
   height: auto;
   margin-right: auto;
   margin-left: auto;
@@ -675,6 +675,118 @@ img {
   position: relative;
   top: 0%;
   opacity: 1;
+}
+
+.div-block-6 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-align-content: space-between;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.contactform {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.paragraph-2 {
+  position: static;
+  width: 100%;
+  font-family: Montserrat, sans-serif;
+}
+
+.heading-9 {
+  margin-top: 16px;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.imagemap {
+  width: 100%;
+  height: 100%;
+  min-height: 100px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.div-block-7 {
+  position: relative;
+  left: 0px;
+  top: auto;
+  right: 0px;
+  bottom: 0px;
+  display: block;
+  overflow: visible;
+  height: 50%;
+  min-height: auto;
+  min-width: auto;
+  margin-right: 0px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  -ms-grid-row-align: stretch;
+  align-self: stretch;
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-image: url('../images/Map.png');
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.div-block-8 {
+  width: 100%;
+  height: auto;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+.section-3 {
+  background-color: #fff;
 }
 
 @media screen and (max-width: 991px) {
