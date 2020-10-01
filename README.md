@@ -1,2 +1,0 @@
-# Website
-Kubuz website
