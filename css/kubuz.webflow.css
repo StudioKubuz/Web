@@ -32,13 +32,6 @@ img {
   grid-template-rows: auto auto auto auto auto auto auto auto;
 }
 
-.heading {
-  padding-left: 10px;
-  font-family: Montserrat, sans-serif;
-  font-size: 42px;
-  line-height: 40px;
-}
-
 .heading-2 {
   padding-left: 10px;
   font-family: Vollkorn, serif;
@@ -65,13 +58,6 @@ img {
   cursor: pointer;
   -o-object-fit: cover;
   object-fit: cover;
-}
-
-.div-block {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #dbdbdb;
-  border-radius: 10px;
 }
 
 .nav1 {
@@ -306,21 +292,6 @@ img {
   border-style: none;
 }
 
-.image-2 {
-  max-height: 100%;
-}
-
-.preloader {
-  display: none;
-}
-
-.div-block-3 {
-  height: 100%;
-  padding-right: 25px;
-  padding-left: 0%;
-  background-color: #edf2f7;
-}
-
 .html-embed {
   position: static;
   left: 0%;
@@ -381,19 +352,19 @@ img {
 }
 
 .content1-image.content1-image3 {
-  background-image: url('../images/Config.png');
+  background-image: url('../images/Kubuz_Home_Configurator.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .content1-image.content1-image2 {
-  background-image: url('../images/Code.png');
+  background-image: url('../images/Kubuz_Home_CPQ.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .content1-image.content1-image1 {
-  background-image: url('../images/Cad.png');
+  background-image: url('../images/Kubuz_Home_CAD-Design.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -426,13 +397,6 @@ img {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
-}
-
-.tagline {
-  opacity: 0.6;
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 .content1-item-description {
@@ -545,43 +509,8 @@ img {
   font-family: Montserrat, sans-serif;
 }
 
-.heading-5 {
-  font-family: Montserrat, sans-serif;
-}
-
 .heading-6 {
   font-family: Montserrat, sans-serif;
-}
-
-.heading-7 {
-  font-family: Montserrat, sans-serif;
-}
-
-.heading-8 {
-  position: relative;
-  left: 0%;
-  top: 0%;
-  right: auto;
-  bottom: auto;
-  overflow: visible;
-  padding-left: 20px;
-  -o-object-fit: fill;
-  object-fit: fill;
-}
-
-.container {
-  position: relative;
-}
-
-.div-block-4 {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  margin-top: 0%;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .projecttitle {
@@ -628,17 +557,6 @@ img {
 .gridcontainer {
   position: relative;
   opacity: 1;
-}
-
-.gridimage {
-  position: static;
-  border-style: none;
-  border-width: 1px;
-  border-color: #d1d1d1;
-  border-radius: 10px;
-  cursor: pointer;
-  -o-object-fit: cover;
-  object-fit: cover;
 }
 
 .gridtext {
@@ -736,14 +654,6 @@ img {
   font-weight: 600;
 }
 
-.imagemap {
-  width: 100%;
-  height: 100%;
-  min-height: 100px;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
 .div-block-7 {
   position: relative;
   left: 0px;
@@ -768,7 +678,7 @@ img {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  background-image: url('../images/Map.png');
+  background-image: url('../images/Kubuz_Home_Map.jpg');
   background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -799,11 +709,6 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: auto auto auto auto;
     grid-template-rows: auto auto auto auto;
-  }
-  .heading {
-    margin-top: 10px;
-    font-size: 24px;
-    line-height: 20px;
   }
   .heading-2 {
     font-size: 12px;
@@ -1000,10 +905,6 @@ img {
   .feature3-text-wrapper {
     padding-left: 0px;
   }
-  .gridimage {
-    max-height: 100%;
-    max-width: 100%;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1045,10 +946,6 @@ img {
     padding-right: 20px;
     padding-left: 20px;
   }
-  .nav1-menuicon-dark {
-    display: inline-block;
-    width: 50px;
-  }
   .nav1-menu-wrapper {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -1082,14 +979,6 @@ img {
   .nav1-wrap {
     padding-top: 20px;
     padding-bottom: 10px;
-  }
-  .gridimage {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    border-style: none;
-    border-radius: 10px;
   }
 }
 
