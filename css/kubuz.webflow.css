@@ -965,6 +965,9 @@ img {
     border-style: none;
     border-radius: 10px;
   }
+  .nav1-menu-btn {
+    display: block;
+  }
   .nav1-logo-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -979,6 +982,45 @@ img {
   .nav1-wrap {
     padding-top: 20px;
     padding-bottom: 10px;
+  }
+  .section {
+    display: block;
+  }
+  .heading-3 {
+    font-size: 28px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .html-embed {
+    display: none;
+    width: 100%;
+    clear: left;
+  }
+  .div-block-6 {
+    position: static;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .contactform {
+    display: block;
+    clear: none;
+  }
+  .div-block-7 {
+    display: none;
+  }
+  .image-2 {
+    display: none;
   }
 }
 
