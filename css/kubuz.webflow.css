@@ -55,6 +55,7 @@ img {
   border-width: 1px;
   border-color: #d1d1d1;
   border-radius: 10px;
+  opacity: 1;
   cursor: pointer;
   -o-object-fit: cover;
   object-fit: cover;
@@ -579,6 +580,7 @@ img {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+  background-color: transparent;
   opacity: 1;
   font-family: Montserrat, sans-serif;
   color: #333;
@@ -832,6 +834,10 @@ img {
   right: 0%;
   bottom: auto;
   z-index: 2;
+}
+
+.image-4 {
+  opacity: 1;
 }
 
 @media screen and (max-width: 991px) {
