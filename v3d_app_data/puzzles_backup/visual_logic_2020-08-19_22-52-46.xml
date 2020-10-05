@@ -1,0 +1,1689 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="663.6316258427964" scrolly="489.2616346304385" scale="0.7404322273126935">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="G(OH!nVj.3lGIk@|~)gm" x="-790" y="-590">
+      <field name="LOAD_COMP_ASSETS">TRUE</field>
+      <field name="FULLSCREEN">FALSE</field>
+      <field name="BKG_TRANSPARENCY">TRUE</field>
+      <field name="PRESERVE_DRAW_BUF">TRUE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="false" scrollx="334.9138202414915" scrolly="-130.9919942750164" scale="0.5568374181775587">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="hz-Tda4w~j~tk.)Swb7K" type="">List</variable>
+      <variable id="LkH3YjYQH$O`6+k!Bvz~" type="">topslider</variable>
+      <variable id="l2#.Kut[+?B(*1CqwM8x" type="">middleslider</variable>
+      <variable id=",3e;%:ypWqm;Be_L9.;(" type="">bottomslider</variable>
+      <variable id="k|12g.YMYN;pQWTudVrl" type="">Heigth</variable>
+      <variable id="{MhdiB.-?2)h-X1`~exK" type="">Thickness</variable>
+      <variable id="Rbir0^F53h?vlHvYu;@k" type="">Qty</variable>
+      <variable id="y=-S_`(H7y6A*L^gY;*r" type="">Average</variable>
+      <variable id="=m(N{g[AcFDkPr-HX%pl" type="">Rotation</variable>
+      <variable id="A~/ZYaR=c#0c8DAKd7uh" type="">Segment</variable>
+      <variable id="-qVPyeW{NbFBX;JL|^^O" type="">Price Startup</variable>
+      <variable id="j?1I)dW):0G?)WUBxl7r" type="">PriceSegments</variable>
+      <variable id="Ik?N|dNQ-xdO^0wrU.9B" type="">Price Size</variable>
+      <variable id="wuOwTXwA2bTa-O%KbbXr" type="">Angle</variable>
+      <variable id="MaR(v_JmGl+l4ICmPSg/" type="">i</variable>
+      <variable id="L,+T_wmUhhb+MPk5{4`e" type="">object</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="y#SIgKTd=nvov-tLVWW;" x="10" y="10">
+      <field name="VAR" id="hz-Tda4w~j~tk.)Swb7K">List</field>
+      <value name="VALUE">
+        <block type="lists_create_empty" id=")n$m?iT}3a6ng.6UxI!3"/>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="zoomCameraToObject" id=")xR52HErus0hj#2dRN4y" x="10" y="70">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+      <value name="OBJECT">
+        <shadow type="objectList" id="[.!PbwCS0P^t,W?ei{|T">
+          <field name="FIELDNAME">Segment Horizontal Middle</field>
+        </shadow>
+      </value>
+      <value name="DURATION">
+        <shadow type="math_number" id="H!K]C(W,Q4PD1zEAkW;}">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="hide" id="{@n0)9V??+0V1^^^S.Cl" x="10" y="130">
+      <value name="VALUE">
+        <block type="lists_create_with" id="jw%TC+7UmG-7EDS8p^ar" inline="false">
+          <mutation items="6"/>
+          <value name="ADD0">
+            <block type="objectList" id="-09.Zi,{V1@Bo~_Q$u`:">
+              <field name="FIELDNAME">Fitting_Brass</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="objectList" id="$EmkBYa$0}+=^SiNN2wK">
+              <field name="FIELDNAME">Fitting_White</field>
+            </block>
+          </value>
+          <value name="ADD2">
+            <block type="objectList" id="OTV9fZfd4z|`#q6K#P?,">
+              <field name="FIELDNAME">Cable_White</field>
+            </block>
+          </value>
+          <value name="ADD3">
+            <block type="objectList" id="B6]:n|om6XhVDQ-}C*-3">
+              <field name="FIELDNAME">Segment_Acrylic Satin Black</field>
+            </block>
+          </value>
+          <value name="ADD4">
+            <block type="objectList" id="]pGRLU+|r..Lp(4{(fIV">
+              <field name="FIELDNAME">Segment_Acrylic Satin White</field>
+            </block>
+          </value>
+          <value name="ADD5">
+            <block type="objectList" id="(I.`%LJc_?Y|uw7P4060">
+              <field name="FIELDNAME">Segment_Wood Oak</field>
+            </block>
+          </value>
+        </block>
+      </value>
+      <next>
+        <block type="setInterval" id="rln3elXq[;!qmXz]Sfv1">
+          <value name="VALUE">
+            <shadow type="math_number" id="|4NU=+/3GE2TG!}gp7ou">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="procedures_callnoreturn" id="1JIVB0;R?Kq](-0pwrY7">
+              <mutation name="TopSlider"/>
+              <next>
+                <block type="procedures_callnoreturn" id="iWlpc,Eq#I`C.0h(]m1X">
+                  <mutation name="Middle Slider"/>
+                  <next>
+                    <block type="procedures_callnoreturn" id="fKawXrgn`qiCM|~fpTaZ">
+                      <mutation name="Bottom Slider"/>
+                      <next>
+                        <block type="procedures_callnoreturn" id="D}ToV/q9MqdE~,=QhOVf">
+                          <mutation name="Thickness slider"/>
+                          <next>
+                            <block type="procedures_callnoreturn" id="c#iZrwZS4o}04W_DBZ2|">
+                              <mutation name="Heigth Slider"/>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="6H0%5YZdR-UbB^[pL%H;" x="10" y="490">
+      <field name="NAME">TopSlider</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id=".=Mb},^8#pkk9uMj|}i(">
+          <field name="VAR" id="LkH3YjYQH$O`6+k!Bvz~">topslider</field>
+          <value name="VALUE">
+            <block type="convertToNumber" id="KDXSSZqmle0:s1k`ZvsO">
+              <value name="VALUE">
+                <block type="getHTMLElemAttribute" id="8Vz~@HUN9?IsH8sS-]*X">
+                  <field name="ATTRIBUTE">value</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <block type="text" id="DSKN}is]#]v_{oI~IiAS">
+                      <field name="TEXT">topslider</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="setMorphFactor" id="^v$Swnm-nb/lpA?Gmd(L">
+              <field name="TARGET_NAME">Top</field>
+              <value name="OBJ_NAME">
+                <shadow type="objectList" id="%yi3Ul72ZR_CXn,]l4F4">
+                  <field name="FIELDNAME">Segment</field>
+                </shadow>
+                <block type="objectList" id="U!d{5QNCfd~b.JYk(J#@">
+                  <field name="FIELDNAME">Segment</field>
+                </block>
+              </value>
+              <value name="FACTOR">
+                <shadow type="math_number" id="AVA)BohS^;NLLr23]Edi">
+                  <field name="NUM">0.5</field>
+                </shadow>
+                <block type="variables_get" id="RxBlf3J|{Tu#^I12;eM;">
+                  <field name="VAR" id="LkH3YjYQH$O`6+k!Bvz~">topslider</field>
+                </block>
+              </value>
+              <next>
+                <block type="setMorphFactor" id="pBr{$cdebb$9XR].Wlou">
+                  <field name="TARGET_NAME">Diameter</field>
+                  <value name="OBJ_NAME">
+                    <shadow type="objectList" id="wB?:daXkv(2M$XKUZ[x%">
+                      <field name="FIELDNAME">MountingRing</field>
+                    </shadow>
+                    <block type="objectList" id="}k19D^n-8ZXzhC/=}Ez/">
+                      <field name="FIELDNAME">Segment Horizontal Top</field>
+                    </block>
+                  </value>
+                  <value name="FACTOR">
+                    <shadow type="math_number" id="Z)E@MG{ls_Acf_/qMxK;">
+                      <field name="NUM">0.5</field>
+                    </shadow>
+                    <block type="math_arithmetic" id="n8QS+}Ar`c4Z;(dhcW/?">
+                      <field name="OP">ADD</field>
+                      <value name="A">
+                        <shadow type="math_number">
+                          <field name="NUM">2</field>
+                        </shadow>
+                        <block type="variables_get" id="/(0GW|]@|{`tF4.lzjsl">
+                          <field name="VAR" id="LkH3YjYQH$O`6+k!Bvz~">topslider</field>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <shadow type="math_number">
+                          <field name="NUM">2</field>
+                        </shadow>
+                        <block type="math_arithmetic" id="xbYZ]_dHbE(1e{4f+SW?">
+                          <field name="OP">DIVIDE</field>
+                          <value name="A">
+                            <shadow type="math_number">
+                              <field name="NUM">2</field>
+                            </shadow>
+                            <block type="convertToNumber" id="f1i;nVLAq;CMX$^-D~0|">
+                              <value name="VALUE">
+                                <block type="getHTMLElemAttribute" id="HmbSFr3u1qwjP:SK*0zJ">
+                                  <field name="ATTRIBUTE">value</field>
+                                  <field name="PARENT">TRUE</field>
+                                  <value name="ID">
+                                    <block type="text" id=",g4%(MnE:$ho_yx+1?Jc">
+                                      <field name="TEXT">rotatesegmentslider</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <value name="B">
+                            <shadow type="math_number" id="u|VpVTj,+(+g-#a2c|Y8">
+                              <field name="NUM">450</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="procedures_callnoreturn" id="EnLD]J6;HiiWc6nE@Oe=">
+                      <mutation name="update"/>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="^/C[KV@qLjK$EQJ,7gMJ" x="10" y="730">
+      <field name="NAME">Middle Slider</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="ymr8cKX{9@:Sk^eX@5ZY">
+          <field name="VAR" id="l2#.Kut[+?B(*1CqwM8x">middleslider</field>
+          <value name="VALUE">
+            <block type="convertToNumber" id="JBMH|@r=g@ck.T|hT6f0">
+              <value name="VALUE">
+                <block type="getHTMLElemAttribute" id="xR=NrvQ~T;m9AsP=/jmp">
+                  <field name="ATTRIBUTE">value</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <block type="text" id="[IA7%*$W|gYe{CWjmO8K">
+                      <field name="TEXT">middleslider</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="setMorphFactor" id="s36Mcux:;o-I~PA.7Q|H">
+              <field name="TARGET_NAME">Middle</field>
+              <value name="OBJ_NAME">
+                <shadow type="objectList" id="T~Mkrt^:n:HPR+KIpdzG">
+                  <field name="FIELDNAME">Segment</field>
+                </shadow>
+                <block type="objectList" id="$-m1,j3Xec|dQ#m@^dTe">
+                  <field name="FIELDNAME">Segment</field>
+                </block>
+              </value>
+              <value name="FACTOR">
+                <shadow type="math_number" id="6au6;Y{afq}-:(3#y^d)">
+                  <field name="NUM">0.5</field>
+                </shadow>
+                <block type="variables_get" id="Z$)%_=Q^|U^9@@^Dju`q">
+                  <field name="VAR" id="l2#.Kut[+?B(*1CqwM8x">middleslider</field>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="eb0oMvj.1F```|G!_?.;">
+                  <field name="VAR" id="y=-S_`(H7y6A*L^gY;*r">Average</field>
+                  <value name="VALUE">
+                    <block type="math_on_list" id="P`fh01tD[P`]/%U-9{e~">
+                      <mutation op="AVERAGE"/>
+                      <field name="OP">AVERAGE</field>
+                      <value name="LIST">
+                        <block type="lists_create_with" id="/qi%.a27ShVI:|o}e9)C">
+                          <mutation items="5"/>
+                          <value name="ADD0">
+                            <block type="convertToNumber" id="$7[iY+Hj87^XSVl^~|Wv">
+                              <value name="VALUE">
+                                <block type="getHTMLElemAttribute" id="hHdx9y$#9fT8A|*tx=$X">
+                                  <field name="ATTRIBUTE">value</field>
+                                  <field name="PARENT">TRUE</field>
+                                  <value name="ID">
+                                    <block type="text" id="6yuqqPX;8Pd]@-{s`fbH">
+                                      <field name="TEXT">topslider</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <value name="ADD1">
+                            <block type="convertToNumber" id="l29Zu%x]T#S#$Ms,Zx,*">
+                              <value name="VALUE">
+                                <block type="getHTMLElemAttribute" id="=U,u~?4:8(eE~I=7[[i7">
+                                  <field name="ATTRIBUTE">value</field>
+                                  <field name="PARENT">TRUE</field>
+                                  <value name="ID">
+                                    <block type="text" id="/1$Cy]s7Dk1N55GK|7|B">
+                                      <field name="TEXT">bottomslider</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <value name="ADD2">
+                            <block type="convertToNumber" id="UQ[,|`LJ0Grl_We_,jn|">
+                              <value name="VALUE">
+                                <block type="getHTMLElemAttribute" id="sh`%?vY)]P%i=9G?|#Y5">
+                                  <field name="ATTRIBUTE">value</field>
+                                  <field name="PARENT">TRUE</field>
+                                  <value name="ID">
+                                    <block type="text" id="=}d#e.n@#$0)=ou#54CG">
+                                      <field name="TEXT">middleslider</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <value name="ADD3">
+                            <block type="convertToNumber" id="B3`o#{2t#8bIyra!vzWe">
+                              <value name="VALUE">
+                                <block type="getHTMLElemAttribute" id="+DDWgTA0E4|QWsB,RI=u">
+                                  <field name="ATTRIBUTE">value</field>
+                                  <field name="PARENT">TRUE</field>
+                                  <value name="ID">
+                                    <block type="text" id=";/G~yP]m!i8]uk9:Z+5y">
+                                      <field name="TEXT">middleslider</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <value name="ADD4">
+                            <block type="convertToNumber" id="q[lSDN!^zRJ(fuE%dna`">
+                              <value name="VALUE">
+                                <block type="getHTMLElemAttribute" id="3%WlTx00BGI|:$OZJU(D">
+                                  <field name="ATTRIBUTE">value</field>
+                                  <field name="PARENT">TRUE</field>
+                                  <value name="ID">
+                                    <block type="text" id="jhyGORLE}Elu*oP-Io8O">
+                                      <field name="TEXT">middleslider</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="setMorphFactor" id="HprU{z2C7x{s`{/rQyL6">
+                      <field name="TARGET_NAME">Diameter</field>
+                      <value name="OBJ_NAME">
+                        <shadow type="objectList">
+                          <field name="FIELDNAME">MountingRing</field>
+                        </shadow>
+                        <block type="objectList" id="TkbNyFW`Yl!ZC19NC|1G">
+                          <field name="FIELDNAME">Segment Horizontal Middle</field>
+                        </block>
+                      </value>
+                      <value name="FACTOR">
+                        <shadow type="math_number" id="~=[in#=1Q0o-^o7~78xE">
+                          <field name="NUM">0.5</field>
+                        </shadow>
+                        <block type="math_arithmetic" id=".-{(mNR8I%-z9}C1IegL">
+                          <field name="OP">ADD</field>
+                          <value name="A">
+                            <shadow type="math_number">
+                              <field name="NUM">2</field>
+                            </shadow>
+                            <block type="variables_get" id="c+l(PZVHVx]!4f(|-}.G">
+                              <field name="VAR" id="y=-S_`(H7y6A*L^gY;*r">Average</field>
+                            </block>
+                          </value>
+                          <value name="B">
+                            <shadow type="math_number">
+                              <field name="NUM">2</field>
+                            </shadow>
+                            <block type="math_arithmetic" id="wEYv0K!%z#aU^+b(LYh6">
+                              <field name="OP">DIVIDE</field>
+                              <value name="A">
+                                <shadow type="math_number">
+                                  <field name="NUM">2</field>
+                                </shadow>
+                                <block type="convertToNumber" id="(2Nh-S1xv8XD^dH#TXb{">
+                                  <value name="VALUE">
+                                    <block type="getHTMLElemAttribute" id="+l2LcO=y{6r[xDbG7s!i">
+                                      <field name="ATTRIBUTE">value</field>
+                                      <field name="PARENT">TRUE</field>
+                                      <value name="ID">
+                                        <block type="text" id="[WBIeX0SZ0E?_.9f3f^s">
+                                          <field name="TEXT">rotatesegmentslider</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <value name="B">
+                                <shadow type="math_number" id="Hh{^Yl2_|b;#J]6%;iM7">
+                                  <field name="NUM">450</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="procedures_callnoreturn" id="Duhu.*c^8rq0wS~$wyI}">
+                          <mutation name="update"/>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="a_,yQ8Fc$[pk|%aVjv.|" x="10" y="1150">
+      <field name="NAME">Bottom Slider</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="I70Ysgi$Q+|#S?KJcxro">
+          <field name="VAR" id=",3e;%:ypWqm;Be_L9.;(">bottomslider</field>
+          <value name="VALUE">
+            <block type="convertToNumber" id="7X}2[#ytwCQ%f^-)yTq$">
+              <value name="VALUE">
+                <block type="getHTMLElemAttribute" id="@0lD-*T}p530},t3uTdK">
+                  <field name="ATTRIBUTE">value</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <block type="text" id="Y`qjzq+p?9Aq$?PUj[e)">
+                      <field name="TEXT">bottomslider</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="setMorphFactor" id="dtlh$#m@.bEv]dv`Ckb7">
+              <field name="TARGET_NAME">Bottom</field>
+              <value name="OBJ_NAME">
+                <shadow type="objectList" id="Iz1X!W*Sso$rmJi,jdau">
+                  <field name="FIELDNAME">Segment</field>
+                </shadow>
+                <block type="objectList" id="Ou0T8!dbaRk-J(OMsctk">
+                  <field name="FIELDNAME">Segment</field>
+                </block>
+              </value>
+              <value name="FACTOR">
+                <shadow type="math_number">
+                  <field name="NUM">0.5</field>
+                </shadow>
+                <block type="variables_get" id="AKP4hk4+X`%K)Vtt{MYv">
+                  <field name="VAR" id=",3e;%:ypWqm;Be_L9.;(">bottomslider</field>
+                </block>
+              </value>
+              <next>
+                <block type="setMorphFactor" id="WGn;RVNG}aWp0;2GB-_)">
+                  <field name="TARGET_NAME">Diameter</field>
+                  <value name="OBJ_NAME">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">MountingRing</field>
+                    </shadow>
+                    <block type="objectList" id="`jJ]Yvg3`GCe,IuxG*Cu">
+                      <field name="FIELDNAME">Segment Horizontal Bottom</field>
+                    </block>
+                  </value>
+                  <value name="FACTOR">
+                    <shadow type="math_number" id="u]$GI3l1kx;{$Y#ko7{]">
+                      <field name="NUM">0.5</field>
+                    </shadow>
+                    <block type="math_arithmetic" id="@FeKuT/zIWMS^nBmbK_j">
+                      <field name="OP">ADD</field>
+                      <value name="A">
+                        <shadow type="math_number" id="g;(LjGsFkC.8wK0(mt11">
+                          <field name="NUM">2</field>
+                        </shadow>
+                        <block type="variables_get" id="`VJ0E^o%Rf@9`2xIOs=t">
+                          <field name="VAR" id=",3e;%:ypWqm;Be_L9.;(">bottomslider</field>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <shadow type="math_number" id="=((+VzEM~962=tO!%7h6">
+                          <field name="NUM">2</field>
+                        </shadow>
+                        <block type="math_arithmetic" id="5c(ochBmYx}(OUX:PH[|">
+                          <field name="OP">DIVIDE</field>
+                          <value name="A">
+                            <shadow type="math_number" id="jDC|V*IO6-Xl*`Z^@UQP">
+                              <field name="NUM">2</field>
+                            </shadow>
+                            <block type="convertToNumber" id="huSd$iDSN?SZ(;j$m:9e">
+                              <value name="VALUE">
+                                <block type="getHTMLElemAttribute" id="!0`9+n)?tV!xnktMk6,w">
+                                  <field name="ATTRIBUTE">value</field>
+                                  <field name="PARENT">TRUE</field>
+                                  <value name="ID">
+                                    <block type="text" id="e)/}:V]eL_w`G8abK0#^">
+                                      <field name="TEXT">rotatesegmentslider</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <value name="B">
+                            <shadow type="math_number" id="ut3/Vq]oMZvyr5|3ZWi$">
+                              <field name="NUM">450</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="procedures_callnoreturn" id="u-B8/~1LScr]iHnoV8Fw">
+                      <mutation name="update"/>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="4|Ud4,+gC%cW~@#Zq9Hl" x="10" y="1390">
+      <field name="NAME">Heigth Slider</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="%TqK=c4t[XmkQRcpuNZk">
+          <field name="VAR" id="k|12g.YMYN;pQWTudVrl">Heigth</field>
+          <value name="VALUE">
+            <block type="convertToNumber" id="PT6W3T:kTPOu{m7c^zO2">
+              <value name="VALUE">
+                <block type="getHTMLElemAttribute" id="2.KjjU)%/%WgoJ+Y`}F@">
+                  <field name="ATTRIBUTE">value</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <block type="text" id="]/R$})vs!w+WM_KE3W~3">
+                      <field name="TEXT">heightslider</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="setMorphFactor" id="hqF+DyQ5-8x(6i~OQx%|">
+              <field name="TARGET_NAME">Height</field>
+              <value name="OBJ_NAME">
+                <shadow type="objectList" id="u2x+hHAch|?J#@X8NLFN">
+                  <field name="FIELDNAME">Segment</field>
+                </shadow>
+                <block type="objectList" id="v@(r~Q*9sr-^xybseNIV">
+                  <field name="FIELDNAME">Segment</field>
+                </block>
+              </value>
+              <value name="FACTOR">
+                <shadow type="math_number" id="?5cPUOu8m=Kr(bYZVO/W">
+                  <field name="NUM">0.5</field>
+                </shadow>
+                <block type="variables_get" id="p.H.J7s(8$;B.s:}eac4">
+                  <field name="VAR" id="k|12g.YMYN;pQWTudVrl">Heigth</field>
+                </block>
+              </value>
+              <next>
+                <block type="setObjTransform" id="RXg:.fNZ~4-_xMvywK7!">
+                  <field name="MODE">position</field>
+                  <field name="OFFSET">FALSE</field>
+                  <value name="TARGETOBJ">
+                    <block type="objectList" id="i[a_zaWl)mb.QEoIgo~-">
+                      <field name="FIELDNAME">Segment Horizontal Middle</field>
+                    </block>
+                  </value>
+                  <value name="Z">
+                    <block type="math_arithmetic" id="D1Te|OKp]40VR}DG%nU*">
+                      <field name="OP">DIVIDE</field>
+                      <value name="A">
+                        <shadow type="math_number" id="`H6)5)dZ;WnpF+$4n}WW">
+                          <field name="NUM">2</field>
+                        </shadow>
+                        <block type="math_arithmetic" id="F?}imo;qt/AIhh?Gz[5h">
+                          <field name="OP">MINUS</field>
+                          <value name="A">
+                            <shadow type="math_number" id="U]ii_ixAG#C0N$/3d^9j">
+                              <field name="NUM">185</field>
+                            </shadow>
+                          </value>
+                          <value name="B">
+                            <shadow type="math_number" id="~%^{X}!`[x2rx^lLYEYr">
+                              <field name="NUM">2</field>
+                            </shadow>
+                            <block type="math_arithmetic" id="KLROBBnK)tn5F5uI$4TR">
+                              <field name="OP">MULTIPLY</field>
+                              <value name="A">
+                                <shadow type="math_number" id="5t0kwn-Kp?z(+:zUJGi1">
+                                  <field name="NUM">2</field>
+                                </shadow>
+                                <block type="getHTMLElemAttribute" id="~,mWGT8*WD,Y/#@gYs|m">
+                                  <field name="ATTRIBUTE">value</field>
+                                  <field name="PARENT">TRUE</field>
+                                  <value name="ID">
+                                    <block type="text" id="puW50t[0R5.TjQ^-Z2FG">
+                                      <field name="TEXT">heightslider</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <value name="B">
+                                <shadow type="math_number" id="ibg)D45h4Fd:Gk$iH~p5">
+                                  <field name="NUM">92.5</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <shadow type="math_number" id="-@i69Nj_QXa;Y30p~/My">
+                          <field name="NUM">1000</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="setObjTransform" id="M*K^-102*=$W+S(;ZIq6">
+                      <field name="MODE">position</field>
+                      <field name="OFFSET">FALSE</field>
+                      <value name="TARGETOBJ">
+                        <block type="objectList" id="CC}c4z8r#(:,4(yu1Y#0">
+                          <field name="FIELDNAME">Segment Horizontal Bottom</field>
+                        </block>
+                      </value>
+                      <value name="Z">
+                        <block type="math_arithmetic" id="O2%P@{).M{p[a)}prlIC">
+                          <field name="OP">DIVIDE</field>
+                          <value name="A">
+                            <shadow type="math_number" id="Q+X_}A!LQM5NhK+(/LCb">
+                              <field name="NUM">2</field>
+                            </shadow>
+                            <block type="math_arithmetic" id="J^($o4ttz1?,2[M{kE%r">
+                              <field name="OP">MINUS</field>
+                              <value name="A">
+                                <shadow type="math_number" id="o3]~;CzQUx(/)(/Is.p;">
+                                  <field name="NUM">20</field>
+                                </shadow>
+                              </value>
+                              <value name="B">
+                                <shadow type="math_number">
+                                  <field name="NUM">2</field>
+                                </shadow>
+                                <block type="math_arithmetic" id="UuQ:Le?LHvHZlxBa/Og]">
+                                  <field name="OP">MULTIPLY</field>
+                                  <value name="A">
+                                    <shadow type="math_number">
+                                      <field name="NUM">2</field>
+                                    </shadow>
+                                    <block type="getHTMLElemAttribute" id="jLT{Wg-@avry9yq?U07*">
+                                      <field name="ATTRIBUTE">value</field>
+                                      <field name="PARENT">TRUE</field>
+                                      <value name="ID">
+                                        <block type="text" id=":KUj}CKV0R}DIeW)$!oe">
+                                          <field name="TEXT">heightslider</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </value>
+                                  <value name="B">
+                                    <shadow type="math_number" id=".^a^4dV0Ju/261+OQ6}[">
+                                      <field name="NUM">185</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <value name="B">
+                            <shadow type="math_number" id="%p%xBlA/7lhk7v5^vBR-">
+                              <field name="NUM">1000</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="procedures_callnoreturn" id="WY,EAt9[T{?`5HGS-7S6">
+                          <mutation name="update"/>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="e153b0JZikBrh8T!Qv#O" x="10" y="1710">
+      <field name="NAME">Thickness slider</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="/]xL!#A-Gsc(^C$/RFgW">
+          <field name="VAR" id="{MhdiB.-?2)h-X1`~exK">Thickness</field>
+          <value name="VALUE">
+            <block type="convertToNumber" id="w~?9})Q5l@HmtxT40T0l">
+              <value name="VALUE">
+                <block type="getHTMLElemAttribute" id="l$OPYn+J-,6?VA5C?gKQ">
+                  <field name="ATTRIBUTE">value</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <block type="text" id="Cd(M^^J{tUQ3cy9UN.d^">
+                      <field name="TEXT">thicknessslider</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="setMorphFactor" id="oCF0-Em7pb:;(t0^,(F1">
+              <field name="TARGET_NAME">Width Segment</field>
+              <value name="OBJ_NAME">
+                <shadow type="objectList" id="/W4^|bYz[|kNrHt8*Uo7">
+                  <field name="FIELDNAME">Segment</field>
+                </shadow>
+                <block type="objectList" id="Lh1VBszJ,}J^toi~9H-J">
+                  <field name="FIELDNAME">Segment</field>
+                </block>
+              </value>
+              <value name="FACTOR">
+                <shadow type="math_number" id="Y_r,WcnO:Z,QBW24Ya9[">
+                  <field name="NUM">0.5</field>
+                </shadow>
+                <block type="variables_get" id="YJ^Eh-n$a=Y8Sj*HuA[8">
+                  <field name="VAR" id="{MhdiB.-?2)h-X1`~exK">Thickness</field>
+                </block>
+              </value>
+              <next>
+                <block type="procedures_callnoreturn" id="B`Z9u)2XK/N4q~Q#=h:1">
+                  <mutation name="update"/>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="nch}uwqNMlhk{lk$H8h!" x="10" y="1870">
+      <field name="NAME">update</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="variables_set" id="+D(-V4-`9V+[6Cx(;C)E">
+          <field name="VAR" id="Rbir0^F53h?vlHvYu;@k">Qty</field>
+          <value name="VALUE">
+            <block type="convertToNumber" id="4;N({*XX{G98P?q.7-6R">
+              <value name="VALUE">
+                <block type="getHTMLElemAttribute" id="SeBth2%5:QPY.*9H%5A|">
+                  <field name="ATTRIBUTE">value</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <block type="text" id="W3oF9GKWXe^5c0_Ewtd;">
+                      <field name="TEXT">segments</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="setObjTransform" id="wogDgk/H#?sWX]jGsrh`">
+              <field name="MODE">rotation</field>
+              <field name="OFFSET">FALSE</field>
+              <value name="TARGETOBJ">
+                <block type="objectList" id="XsCmR+!7_~+CLQjfFj9X">
+                  <field name="FIELDNAME">Segment</field>
+                </block>
+              </value>
+              <value name="Z">
+                <block type="getHTMLElemAttribute" id="h]fmTqU@v2EJ,i}EPQv=">
+                  <field name="ATTRIBUTE">value</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <block type="text" id="gG=(pz%6m]CA^NsGeJ.e">
+                      <field name="TEXT">rotatesegmentslider</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="Gpk.UqR9xP,?BW8~-Oe{">
+                  <field name="VAR" id="=m(N{g[AcFDkPr-HX%pl">Rotation</field>
+                  <value name="VALUE">
+                    <block type="getHTMLElemAttribute" id="D680]{(X?#eo?na=o{`q">
+                      <field name="ATTRIBUTE">value</field>
+                      <field name="PARENT">TRUE</field>
+                      <value name="ID">
+                        <block type="text" id="R/65H||+Gqr5UZyYPMR3">
+                          <field name="TEXT">rotatesegmentslider</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="8lFxvSo2|u,{^pI5QkTD">
+                      <field name="VAR" id="A~/ZYaR=c#0c8DAKd7uh">Segment</field>
+                      <value name="VALUE">
+                        <block type="cloneObject" id="Wi[MiP|B/c=LiUU?TpA;">
+                          <value name="OBJECTINPUT">
+                            <block type="objectList" id="Sfmj~1fe$%2lsoO:=,7.">
+                              <field name="FIELDNAME">Segment</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="removeObject" id="7CT!/gyyr`X%.M/!Df$]">
+                          <value name="VALUE">
+                            <block type="getObjectsFrom" id="nV2tr3U56QUUdRQz#rzU">
+                              <field name="TYPE">ALL</field>
+                              <value name="OBJ">
+                                <block type="variables_get" id="LmP-e9[_RvNf-TS)b|u1">
+                                  <field name="VAR" id="hz-Tda4w~j~tk.)Swb7K">List</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="makeParent" id="7cMA`{D9n|}ypL(@--:4">
+                              <value name="PARENT_WHAT">
+                                <block type="variables_get" id=".nhvehggD@Fn[x8tl=(q">
+                                  <field name="VAR" id="A~/ZYaR=c#0c8DAKd7uh">Segment</field>
+                                </block>
+                              </value>
+                              <value name="PARENT_TO">
+                                <block type="objectList" id=",1lwMTec}~/+mL0rjN?A">
+                                  <field name="FIELDNAME">SegmentParent</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="variables_set" id="Y{=Ctykzsmq//fu_2+{b">
+                                  <field name="VAR" id="wuOwTXwA2bTa-O%KbbXr">Angle</field>
+                                  <value name="VALUE">
+                                    <block type="math_arithmetic" id="8Ed`{j]pMYpM#|zW2RR7">
+                                      <field name="OP">DIVIDE</field>
+                                      <value name="A">
+                                        <shadow type="math_number">
+                                          <field name="NUM">2</field>
+                                        </shadow>
+                                        <block type="math_number" id="O9OY;%[I{1koep[yn9,)">
+                                          <field name="NUM">360</field>
+                                        </block>
+                                      </value>
+                                      <value name="B">
+                                        <shadow type="math_number">
+                                          <field name="NUM">2</field>
+                                        </shadow>
+                                        <block type="variables_get" id="$@((/MS=%mnA;]5H(Y[A">
+                                          <field name="VAR" id="Rbir0^F53h?vlHvYu;@k">Qty</field>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="controls_for" id="0bHV(Mi-9#BrEkN1QoL]">
+                                      <field name="VAR" id="MaR(v_JmGl+l4ICmPSg/">i</field>
+                                      <value name="FROM">
+                                        <shadow type="math_number" id="3i5wi,4F~cHaUOA!6k?m">
+                                          <field name="NUM">1</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="TO">
+                                        <shadow type="math_number">
+                                          <field name="NUM">8</field>
+                                        </shadow>
+                                        <block type="variables_get" id="/5YJCtyL3KDOG`z]Q]-Z">
+                                          <field name="VAR" id="Rbir0^F53h?vlHvYu;@k">Qty</field>
+                                        </block>
+                                      </value>
+                                      <value name="BY">
+                                        <shadow type="math_number" id="m{z/!f4IW`3822ZAaGle">
+                                          <field name="NUM">1</field>
+                                        </shadow>
+                                      </value>
+                                      <statement name="DO">
+                                        <block type="variables_set" id="iDn!||,Vn%bAG2ML/kNj">
+                                          <field name="VAR" id="L,+T_wmUhhb+MPk5{4`e">object</field>
+                                          <value name="VALUE">
+                                            <block type="cloneObject" id="mwbtLCujZVe-g]m1^;EC">
+                                              <value name="OBJECTINPUT">
+                                                <block type="objectList" id="0nMJ@v4r,JPzKjfLy]V1">
+                                                  <field name="FIELDNAME">SegmentParent</field>
+                                                </block>
+                                              </value>
+                                            </block>
+                                          </value>
+                                          <next>
+                                            <block type="setObjTransform" id="!?S[2zT,%zkA!4|%@yuV">
+                                              <field name="MODE">rotation</field>
+                                              <field name="OFFSET">TRUE</field>
+                                              <value name="TARGETOBJ">
+                                                <block type="variables_get" id="ERj3t1S=JVA@?{ea|Ynh">
+                                                  <field name="VAR" id="L,+T_wmUhhb+MPk5{4`e">object</field>
+                                                </block>
+                                              </value>
+                                              <value name="Z">
+                                                <block type="math_arithmetic" id="-5^O$^|KeSTtvB29T-0(">
+                                                  <field name="OP">MULTIPLY</field>
+                                                  <value name="A">
+                                                    <shadow type="math_number">
+                                                      <field name="NUM">2</field>
+                                                    </shadow>
+                                                    <block type="variables_get" id="LW?Hk|zi6,HZuQA=N~=q">
+                                                      <field name="VAR" id="MaR(v_JmGl+l4ICmPSg/">i</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="B">
+                                                    <shadow type="math_number">
+                                                      <field name="NUM">2</field>
+                                                    </shadow>
+                                                    <block type="variables_get" id="OPz(qx^;|X|4%@}@+.kI">
+                                                      <field name="VAR" id="wuOwTXwA2bTa-O%KbbXr">Angle</field>
+                                                    </block>
+                                                  </value>
+                                                </block>
+                                              </value>
+                                              <next>
+                                                <block type="lists_setIndex" id="qG:$/by86EjCQ~g}oDZl">
+                                                  <mutation at="false"/>
+                                                  <field name="MODE">INSERT</field>
+                                                  <field name="WHERE">LAST</field>
+                                                  <value name="LIST">
+                                                    <block type="variables_get" id="_tz(w$I;kj[q(g`)p-dN">
+                                                      <field name="VAR" id="hz-Tda4w~j~tk.)Swb7K">List</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="TO">
+                                                    <block type="variables_get" id="U~Al#^q0VplHJX8jEXq]">
+                                                      <field name="VAR" id="L,+T_wmUhhb+MPk5{4`e">object</field>
+                                                    </block>
+                                                  </value>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </statement>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="77^jv/1PKPAxa?(7Rd6S" x="10" y="2350">
+      <field name="NAME">UpdateCookie</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="callJSFunction" id="#YbJ#8FA$QNqOkLP]@~#">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" name="myJSFunction">
+            <arg name="x"></arg>
+          </mutation>
+          <field name="NAME">myJSFunction</field>
+          <value name="ARG0">
+            <block type="text_join" id="NGhkD^.2.}lzJr7H:n{5">
+              <mutation items="1"/>
+              <value name="ADD0">
+                <block type="math_on_list" id=";Ay)0M8TUxe6.ajw$+%{">
+                  <mutation op="SUM"/>
+                  <field name="OP">SUM</field>
+                  <value name="LIST">
+                    <block type="lists_create_with" id="E?]~QyYZ^9sOtN_sE0Ey">
+                      <mutation items="3"/>
+                      <value name="ADD0">
+                        <block type="variables_get" id="v,@fIT?TDL$q#K%_5v2J">
+                          <field name="VAR" id="-qVPyeW{NbFBX;JL|^^O">Price Startup</field>
+                        </block>
+                      </value>
+                      <value name="ADD1">
+                        <block type="variables_get" id="n-BQu8#v]w|P?gVX{l@L">
+                          <field name="VAR" id="j?1I)dW):0G?)WUBxl7r">PriceSegments</field>
+                        </block>
+                      </value>
+                      <value name="ADD2">
+                        <block type="variables_get" id="`.ta$pl2,}2#Iu:78v01">
+                          <field name="VAR" id="Ik?N|dNQ-xdO^0wrU.9B">Price Size</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <tab name="Colors" type="SecondaryTab" active="true" scrollx="376.6326527354013" scrolly="-1.5011320448866172" scale="0.613913253540759">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="_lu/P9cGKJ[F3v2}@mAq" type="">Onderdelen Lasercut</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="kLjqJ7cp`VND[p`|o8VZ" x="-110" y="90">
+      <field name="VAR" id="_lu/P9cGKJ[F3v2}@mAq">Onderdelen Lasercut</field>
+      <value name="VALUE">
+        <block type="lists_create_with" id="^s#;zWGNa5)7qLl.6jn3">
+          <mutation items="4"/>
+          <value name="ADD0">
+            <block type="objectList" id="a0W5)@i4cNFA,A.vNwOM">
+              <field name="FIELDNAME">Segment</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="objectList" id="yI1P:E}KF[.SZfvb/-T*">
+              <field name="FIELDNAME">Segment Horizontal Bottom</field>
+            </block>
+          </value>
+          <value name="ADD2">
+            <block type="objectList" id="UZi7}Gnb`DNmDaQEY[7g">
+              <field name="FIELDNAME">Segment Horizontal Middle</field>
+            </block>
+          </value>
+          <value name="ADD3">
+            <block type="objectList" id="@lhj9=cTV+2Yjo13%=Uc">
+              <field name="FIELDNAME">Segment Horizontal Top</field>
+            </block>
+          </value>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="{v/Q!o.}G!SWVAJmV;{C" x="-110" y="230">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="it!(Oqy{h{GuE@3ZL`=C">
+          <field name="TEXT">ShadeWood</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="^y!m[}$=(XF~Qe!-Z1#h">
+          <value name="VALUE2">
+            <block type="materialList" id="pgf}WND1f])`b(m7|fM/">
+              <field name="FIELDNAME">Wood Oak</field>
+            </block>
+          </value>
+          <value name="VALUE1">
+            <block type="variables_get" id="wl5tuM6%UVjf{CfW}_1U">
+              <field name="VAR" id="_lu/P9cGKJ[F3v2}@mAq">Onderdelen Lasercut</field>
+            </block>
+          </value>
+          <next>
+            <block type="procedures_callnoreturn" id="){%C]EozvSUx4EAg({fA">
+              <mutation name="update"/>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="8kmx(V@`TFw4jw8@|WZ-">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <block type="text" id="gun4FdB%S`5I`t=Bg|}1">
+              <field name="TEXT">ShadeWhite</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="assignMaterial" id="/ql(i.[.E:].=[ok(w--">
+              <value name="VALUE2">
+                <block type="materialList" id=",|z=G!l2N6|Qzxz)`WiW">
+                  <field name="FIELDNAME">Acrylic Satin White</field>
+                </block>
+              </value>
+              <value name="VALUE1">
+                <block type="variables_get" id="wTepNRICB7sMYp?:p:@F">
+                  <field name="VAR" id="_lu/P9cGKJ[F3v2}@mAq">Onderdelen Lasercut</field>
+                </block>
+              </value>
+              <next>
+                <block type="procedures_callnoreturn" id="OZ-`@EU5XzJ9BxV`D;NR">
+                  <mutation name="update"/>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="0BG~yJ?e2rK++kWfx_xv">
+              <field name="EVENT">click</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <block type="text" id="mGujJ!V..k_l[3E@7hj0">
+                  <field name="TEXT">ShadeBlack</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="assignMaterial" id="$bZ5!r,JQ.Z(fIm;~3r9">
+                  <value name="VALUE2">
+                    <block type="materialList" id="s))ut!}9GIM=u-u94e6p">
+                      <field name="FIELDNAME">Acrylic Satin Black</field>
+                    </block>
+                  </value>
+                  <value name="VALUE1">
+                    <block type="variables_get" id="i/AoqpY+_jpLX$Uxby7t">
+                      <field name="VAR" id="_lu/P9cGKJ[F3v2}@mAq">Onderdelen Lasercut</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="procedures_callnoreturn" id="i%jc)cbHGPD0MK;{l~aU">
+                      <mutation name="update"/>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <next>
+                <block type="eventHTMLElem" id="4~A#^#WweW]4-+z+!FT=">
+                  <field name="EVENT">click</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <block type="text" id="$=!hU,xP+V3N{-)i$bKP">
+                      <field name="TEXT">FittingBrass</field>
+                    </block>
+                  </value>
+                  <statement name="DO">
+                    <block type="assignMaterial" id="%TXH7^$5yGB[;O.#9;dZ">
+                      <value name="VALUE2">
+                        <block type="materialList" id="X#ebi+!anZILo0+i,w3i">
+                          <field name="FIELDNAME">Metalic Paint_Chrome</field>
+                        </block>
+                      </value>
+                      <value name="VALUE1">
+                        <block type="objectList" id="rZ978[e,GG;kDcJyN8^Q">
+                          <field name="FIELDNAME">Fitting_Black</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="procedures_callnoreturn" id="NUkBT=!NU^s[8h={WTnX">
+                          <mutation name="update"/>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="eventHTMLElem" id="P:vsru1FACEPi^unS+VR">
+                      <field name="EVENT">click</field>
+                      <field name="PARENT">TRUE</field>
+                      <value name="ID">
+                        <block type="text" id="tHOx-LgJ~?^0P^%?q7Su">
+                          <field name="TEXT">FittingWhite</field>
+                        </block>
+                      </value>
+                      <statement name="DO">
+                        <block type="assignMaterial" id="LaIA:YJ4:[$fdV]5}*H,">
+                          <value name="VALUE2">
+                            <block type="materialList" id="KY(CoqmO|Ru39e^o9hY!">
+                              <field name="FIELDNAME">Metalic Paint_White</field>
+                            </block>
+                          </value>
+                          <value name="VALUE1">
+                            <block type="objectList" id="LDKt@nJF7k:h}xK/~_/3">
+                              <field name="FIELDNAME">Fitting_Black</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="procedures_callnoreturn" id="`ys~yU!YR;j9@K]b8F9A">
+                              <mutation name="update"/>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                      <next>
+                        <block type="eventHTMLElem" id="2fuOdJoFn`:]D(lR95ZP">
+                          <field name="EVENT">click</field>
+                          <field name="PARENT">TRUE</field>
+                          <value name="ID">
+                            <block type="text" id="#d+/PiD)PluD0^{Dt?Nt">
+                              <field name="TEXT">FittingBlack</field>
+                            </block>
+                          </value>
+                          <statement name="DO">
+                            <block type="assignMaterial" id="aNsN-OA(cfJ-%b/#.I(Z">
+                              <value name="VALUE2">
+                                <block type="materialList" id="-Q8[jFwu#ZPt|7]K~sj^">
+                                  <field name="FIELDNAME">Metalic Paint_Black</field>
+                                </block>
+                              </value>
+                              <value name="VALUE1">
+                                <block type="objectList" id="en4JxF{E2iUUc{_l^U@p">
+                                  <field name="FIELDNAME">Fitting_Black</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="procedures_callnoreturn" id="b/7e0uN[{Ga%Av9EBSWK">
+                                  <mutation name="update"/>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                          <next>
+                            <block type="eventHTMLElem" id="+Y-fQ)MyLYR3CnneNVaP">
+                              <field name="EVENT">click</field>
+                              <field name="PARENT">TRUE</field>
+                              <value name="ID">
+                                <block type="text" id="wD*-HYj,h37;/+!SuAK-">
+                                  <field name="TEXT">cordBlack</field>
+                                </block>
+                              </value>
+                              <statement name="DO">
+                                <block type="assignMaterial" id="!X{A_sHLKS{sAH+|@bl!">
+                                  <value name="VALUE2">
+                                    <block type="materialList" id="{ML),l??JRK7K0dU8wVk">
+                                      <field name="FIELDNAME">Metalic Paint_Black</field>
+                                    </block>
+                                  </value>
+                                  <value name="VALUE1">
+                                    <block type="objectList" id="c!mtLT/b%.^5,b+]vj)s">
+                                      <field name="FIELDNAME">Cable_White</field>
+                                    </block>
+                                  </value>
+                                  <next>
+                                    <block type="procedures_callnoreturn" id="{:Ju_6Li^tQLsrAsRp`X">
+                                      <mutation name="update"/>
+                                    </block>
+                                  </next>
+                                </block>
+                              </statement>
+                              <next>
+                                <block type="eventHTMLElem" id="{^s/B#z,6OVe+KTOh!#z">
+                                  <field name="EVENT">click</field>
+                                  <field name="PARENT">TRUE</field>
+                                  <value name="ID">
+                                    <block type="text" id="$mhirM`6yN22_I/0058w">
+                                      <field name="TEXT">cordWhite</field>
+                                    </block>
+                                  </value>
+                                  <statement name="DO">
+                                    <block type="assignMaterial" id="|Z4O/5|?2fJ(Z=d9o!RL">
+                                      <value name="VALUE2">
+                                        <block type="materialList" id="6[?R.1BmEtrBT286GjQT">
+                                          <field name="FIELDNAME">Metalic Paint_White</field>
+                                        </block>
+                                      </value>
+                                      <value name="VALUE1">
+                                        <block type="objectList" id="a[Q4UHO3c]mhZB]J=GFo">
+                                          <field name="FIELDNAME">Cable_White</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="procedures_callnoreturn" id="$YDQf2mvB--@=ek74hXd">
+                                          <mutation name="update"/>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </statement>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <tab name="Text" type="SecondaryTab" active="false" scrollx="225.41359837455127" scrolly="40.2038208897734" scale="0.6768393620286867">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="-qVPyeW{NbFBX;JL|^^O" type="">Price Startup</variable>
+      <variable id="8dE=g|_OQZ#f0t`a?)1j" type="">Diameter</variable>
+      <variable id="j?1I)dW):0G?)WUBxl7r" type="">PriceSegments</variable>
+      <variable id="D5.?=%F8Iyp/*t!3JtND" type="">Height</variable>
+      <variable id="Ik?N|dNQ-xdO^0wrU.9B" type="">Price Size</variable>
+      <variable id="Rbir0^F53h?vlHvYu;@k" type="">Qty</variable>
+      <variable id="k|12g.YMYN;pQWTudVrl" type="">Heigth</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setInterval" id="f[EgR.Wh|x|DbkoRIxw4" x="10" y="10">
+      <value name="VALUE">
+        <shadow type="math_number" id="7Se~XW~8uO?I8;[eg1T$">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="variables_set" id=";YscSVKMVTA[]:x@2~Ob">
+          <field name="VAR" id="-qVPyeW{NbFBX;JL|^^O">Price Startup</field>
+          <value name="VALUE">
+            <block type="math_number" id="Yjxe`KN!E+B!v]I1)xWW">
+              <field name="NUM">70</field>
+            </block>
+          </value>
+          <next>
+            <block type="variables_set" id="Zhj~?L!~Me{L_I6t#$AC">
+              <field name="VAR" id="j?1I)dW):0G?)WUBxl7r">PriceSegments</field>
+              <value name="VALUE">
+                <block type="math_arithmetic" id="N3B@~Fq$nUrkP0ndUyVE">
+                  <field name="OP">MULTIPLY</field>
+                  <value name="A">
+                    <shadow type="math_number" id="3:}FicRxd9AzW[=*HN$H">
+                      <field name="NUM">6</field>
+                    </shadow>
+                    <block type="math_number" id=")/DBzx-=y.s/U3F{J1FZ">
+                      <field name="NUM">6</field>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <shadow type="math_number">
+                      <field name="NUM">2</field>
+                    </shadow>
+                    <block type="variables_get" id="z3%4sR~[Y(tkLo#nQPh8">
+                      <field name="VAR" id="Rbir0^F53h?vlHvYu;@k">Qty</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="mgW0+!+YPHGlm5)KZ~=#">
+                  <field name="VAR" id="Ik?N|dNQ-xdO^0wrU.9B">Price Size</field>
+                  <value name="VALUE">
+                    <block type="math_arithmetic" id="Sc{pC_(@3UWE%S2!1*G6">
+                      <field name="OP">MULTIPLY</field>
+                      <value name="A">
+                        <shadow type="math_number">
+                          <field name="NUM">6</field>
+                        </shadow>
+                        <block type="variables_get" id="m;b?D$0[kqKH#pCLNJbD">
+                          <field name="VAR" id="k|12g.YMYN;pQWTudVrl">Heigth</field>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <shadow type="math_number">
+                          <field name="NUM">2</field>
+                        </shadow>
+                        <block type="variables_get" id="B@{swUZ!Es~E(cd{3SvC">
+                          <field name="VAR" id="Rbir0^F53h?vlHvYu;@k">Qty</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="setHTMLElemAttribute" id="9T^dOHmpwzmaY;F?G!~M">
+                      <field name="ATTRIBUTE">innerHTML</field>
+                      <field name="PARENT">TRUE</field>
+                      <value name="VALUE">
+                        <block type="text_join" id="e|YhoC,H)URwZNg}S@T`">
+                          <mutation items="2"/>
+                          <value name="ADD0">
+                            <block type="text" id="}[8Citl#.WR}sC315M.)">
+                              <field name="TEXT">€ </field>
+                            </block>
+                          </value>
+                          <value name="ADD1">
+                            <block type="math_on_list" id="^.P8U+ja!J|*W;:S$*!G">
+                              <mutation op="SUM"/>
+                              <field name="OP">SUM</field>
+                              <value name="LIST">
+                                <block type="lists_create_with" id="YT32*3n~r[i3`qh=ofA3">
+                                  <mutation items="3"/>
+                                  <value name="ADD0">
+                                    <block type="variables_get" id="C-B~?U)]^LWF`e/9@QLi">
+                                      <field name="VAR" id="-qVPyeW{NbFBX;JL|^^O">Price Startup</field>
+                                    </block>
+                                  </value>
+                                  <value name="ADD1">
+                                    <block type="variables_get" id="YoH-v0Wa`+t/6GU|-i!z">
+                                      <field name="VAR" id="j?1I)dW):0G?)WUBxl7r">PriceSegments</field>
+                                    </block>
+                                  </value>
+                                  <value name="ADD2">
+                                    <block type="variables_get" id="lpMQkT,k7R7|v[2x9)fz">
+                                      <field name="VAR" id="Ik?N|dNQ-xdO^0wrU.9B">Price Size</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <block type="text" id="C,*{}uU2]CxUgNoxH}H*">
+                          <field name="TEXT">Price</field>
+                        </block>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setInterval" id="UehZkcA_R+;f5FL8aB0T" x="10" y="490">
+      <value name="VALUE">
+        <shadow type="math_number" id="8=g|{FYjy}|R2sKFkE#y">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="variables_set" id="A^M;8uma^yP;E?Q1C`eF">
+          <field name="VAR" id="8dE=g|_OQZ#f0t`a?)1j">Diameter</field>
+          <value name="VALUE">
+            <block type="math_arithmetic" id="A?L)}weD-tskx?-v?{wU">
+              <field name="OP">ADD</field>
+              <value name="A">
+                <shadow type="math_number" id="}$]3wkpMFDKwWfeF9zoI">
+                  <field name="NUM">220</field>
+                </shadow>
+              </value>
+              <value name="B">
+                <shadow type="math_number" id="Hvd?BC}}BQ8zYR14VA.i">
+                  <field name="NUM">2</field>
+                </shadow>
+                <block type="math_arithmetic" id="U$lSh=kT7q$(~dJzi85T">
+                  <field name="OP">MULTIPLY</field>
+                  <value name="A">
+                    <shadow type="math_number" id="O}:vAqLr~)Gf4w2[%Fc`">
+                      <field name="NUM">2</field>
+                    </shadow>
+                    <block type="convertToNumber" id="9g~p#BJufc#iFRB(lQIS">
+                      <value name="VALUE">
+                        <block type="math_on_list" id="%idF=^*H?4*E|#/I?tB=">
+                          <mutation op="MAX"/>
+                          <field name="OP">MAX</field>
+                          <value name="LIST">
+                            <block type="lists_create_with" id="BnT-u7?;V7ef=iwTur8_">
+                              <mutation items="3"/>
+                              <value name="ADD0">
+                                <block type="getHTMLElemAttribute" id="[G)Xb/BGM.bj4a$RBk{G">
+                                  <field name="ATTRIBUTE">value</field>
+                                  <field name="PARENT">TRUE</field>
+                                  <value name="ID">
+                                    <block type="text" id="OFpL(lM#GW4=T@~R5U;G">
+                                      <field name="TEXT">topslider</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <value name="ADD1">
+                                <block type="getHTMLElemAttribute" id="|[]+W*_.yR4,;gId+3Fq">
+                                  <field name="ATTRIBUTE">value</field>
+                                  <field name="PARENT">TRUE</field>
+                                  <value name="ID">
+                                    <block type="text" id=",,+q+?t9Ui$7x^8z(-QJ">
+                                      <field name="TEXT">middleslider</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <value name="ADD2">
+                                <block type="getHTMLElemAttribute" id="5XALi4[H6z7OV(O?dN=P">
+                                  <field name="ATTRIBUTE">value</field>
+                                  <field name="PARENT">TRUE</field>
+                                  <value name="ID">
+                                    <block type="text" id="AxBnZ)xISnD/i)+tfjkC">
+                                      <field name="TEXT">bottomslider</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <shadow type="math_number" id="`yr_-_skvj2aKb27Z^er">
+                      <field name="NUM">100</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="variables_set" id="};Foj2x/]+-~^0):c:#x">
+              <field name="VAR" id="D5.?=%F8Iyp/*t!3JtND">Height</field>
+              <value name="VALUE">
+                <block type="math_arithmetic" id="pm#}r?Q*Dl7DYAz!S%}`">
+                  <field name="OP">ADD</field>
+                  <value name="A">
+                    <shadow type="math_number" id=".Q%d5v.lAwdsL/:R0,F*">
+                      <field name="NUM">370</field>
+                    </shadow>
+                  </value>
+                  <value name="B">
+                    <shadow type="math_number">
+                      <field name="NUM">2</field>
+                    </shadow>
+                    <block type="math_arithmetic" id="*yGL89dh:bfC7|db*-k4">
+                      <field name="OP">MULTIPLY</field>
+                      <value name="A">
+                        <shadow type="math_number">
+                          <field name="NUM">2</field>
+                        </shadow>
+                        <block type="convertToNumber" id="N%Rp]D@#{lVYNLAxCnh,">
+                          <value name="VALUE">
+                            <block type="getHTMLElemAttribute" id="S.i/Ml2@F$:f_TK0pF-G">
+                              <field name="ATTRIBUTE">value</field>
+                              <field name="PARENT">TRUE</field>
+                              <value name="ID">
+                                <block type="text" id="$HD/1$CE1Jj}Rg!z2A7T">
+                                  <field name="TEXT">heightslider</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <shadow type="math_number" id="OpIV7$ga0C3=d?=$1nWk">
+                          <field name="NUM">100</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="setHTMLElemAttribute" id="fCk(cDD9g%ahpu%Z;l@x">
+                  <field name="ATTRIBUTE">innerHTML</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="VALUE">
+                    <block type="text_join" id="2.T3y$j7u!}~P:p^xi{:">
+                      <mutation items="7"/>
+                      <value name="ADD0">
+                        <block type="text" id="Fz!H.k{K:bYs}H8RT)u#">
+                          <field name="TEXT">Dimensions: </field>
+                        </block>
+                      </value>
+                      <value name="ADD1">
+                        <block type="variables_get" id="v63,BM%k$rxbM*?tndG(">
+                          <field name="VAR" id="8dE=g|_OQZ#f0t`a?)1j">Diameter</field>
+                        </block>
+                      </value>
+                      <value name="ADD2">
+                        <block type="text" id="(WD}H#mke7_A(*K[xzo^">
+                          <field name="TEXT"> x </field>
+                        </block>
+                      </value>
+                      <value name="ADD3">
+                        <block type="variables_get" id="WKi$aSk?N9`E[S5M+Q_)">
+                          <field name="VAR" id="8dE=g|_OQZ#f0t`a?)1j">Diameter</field>
+                        </block>
+                      </value>
+                      <value name="ADD4">
+                        <block type="text" id="i7qUi;9d-tjHmdRR.TKP">
+                          <field name="TEXT"> x </field>
+                        </block>
+                      </value>
+                      <value name="ADD5">
+                        <block type="variables_get" id="{^}N9w7hVWle?@wzF_QV">
+                          <field name="VAR" id="D5.?=%F8Iyp/*t!3JtND">Height</field>
+                        </block>
+                      </value>
+                      <value name="ADD6">
+                        <block type="text" id="4T!G;)w_CafXeD$2%5.3">
+                          <field name="TEXT"> mm</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="ID">
+                    <block type="text" id="UpV|-#VX*m]64?xNs]o$">
+                      <field name="TEXT">Dimensions</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <tab name="Woocommerce" type="SecondaryTab" active="false" scrollx="331.6941223144531" scrolly="438.79754638671875" scale="1">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="-qVPyeW{NbFBX;JL|^^O" type="">Price Startup</variable>
+      <variable id="j?1I)dW):0G?)WUBxl7r" type="">PriceSegments</variable>
+      <variable id="Ik?N|dNQ-xdO^0wrU.9B" type="">Price Size</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="(Xn/lsr0JwfE{R!iGKi." x="-10" y="-310">
+      <field name="NAME">setCookie</field>
+      <comment pinned="false" h="80" w="160">Describe this function...</comment>
+      <statement name="STACK">
+        <block type="callJSFunction" id="kX_b1L:oZ@rrjZ|/t6kI">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" name="setCookie">
+            <arg name="numericArg"></arg>
+          </mutation>
+          <field name="NAME">setCookie</field>
+          <value name="ARG0">
+            <block type="math_on_list" id="cS(Qi~~8oL=E8.]?v6Si">
+              <mutation op="SUM"/>
+              <field name="OP">SUM</field>
+              <value name="LIST">
+                <block type="lists_create_with" id="t8.0S:F6L5XJJA;pe6)L">
+                  <mutation items="3"/>
+                  <value name="ADD0">
+                    <block type="variables_get" id="c4S.a~z]zN5Q.}KXy*LW">
+                      <field name="VAR" id="-qVPyeW{NbFBX;JL|^^O">Price Startup</field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="variables_get" id="8Dxtd)|yaJej1|[%,)7u">
+                      <field name="VAR" id="j?1I)dW):0G?)WUBxl7r">PriceSegments</field>
+                    </block>
+                  </value>
+                  <value name="ADD2">
+                    <block type="variables_get" id="Z7LGR{ZZtRW(0zCmssp-">
+                      <field name="VAR" id="Ik?N|dNQ-xdO^0wrU.9B">Price Size</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="b0^nq3ndzYo=gQlyzhH$" x="10" y="-10">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <block type="text" id="yCUJlzDge?S~FtKommu8">
+          <field name="TEXT">OrderButton</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="procedures_callnoreturn" id="4N;;OM`1MzIuG.k}o!LW">
+          <mutation name="setCookie"/>
+          <next>
+            <block type="placeOrder" id="RN1QV~T-%rU(leT5;-SM">
+              <field name="SCREEN">TRUE</field>
+              <value name="URL">
+                <shadow type="text" id="uOHbGkcZROWWC*%=:d2T">
+                  <field name="TEXT">https://www.thecustomshop.be/winkelmand/?add-to-cart=1360</field>
+                </shadow>
+              </value>
+              <value name="TITLE">
+                <shadow type="text" id="{s1P!Pdd%YE|N1-:8wNj">
+                  <field name="TEXT">Custom Lamp shade order</field>
+                </shadow>
+              </value>
+              <value name="CONTENT">
+                <shadow type="text" id="}Iaf;,]3dGikv^h8Y?Qp">
+                  <field name="TEXT">Your awesome shade lamp - </field>
+                </shadow>
+              </value>
+              <value name="PRICE">
+                <shadow type="math_number" id="f6(`.Np+3D3g4~t[{wzF">
+                  <field name="NUM">8.25</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1329" viewport-y="28" viewport-w="573" viewport-h="317.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
