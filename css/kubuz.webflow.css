@@ -281,7 +281,7 @@ img {
 
 .wrap.w50 {
   width: 1120px;
-  margin-top: 70px;
+  margin-top: 0px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -890,7 +890,7 @@ img {
 .smalltitle {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Montserrat, sans-serif;
   color: #5c5c5c;
   font-size: 14px;
   font-weight: 500;
@@ -905,7 +905,7 @@ img {
   bottom: auto;
   width: 40%;
   height: auto;
-  background-color: #f9f9f9;
+  background-color: transparent;
 }
 
 .div-block-13 {
@@ -994,7 +994,7 @@ img {
 .slider {
   display: block;
   overflow: visible;
-  height: 65%;
+  height: 50%;
   margin-right: 0px;
   background-color: transparent;
 }
@@ -1050,18 +1050,19 @@ img {
 }
 
 .div-block {
-  position: absolute;
-  left: 0%;
-  top: 0%;
+  position: relative;
+  left: auto;
+  top: auto;
   right: auto;
   bottom: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  overflow: visible;
   width: 100%;
-  height: auto;
-  margin-top: 70px;
+  height: 100%;
+  margin-top: 0px;
   -o-object-fit: fill;
   object-fit: fill;
 }
@@ -1093,13 +1094,13 @@ img {
 
 .paragraph-3 {
   margin-top: 10px;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 14px;
   line-height: 20px;
 }
 
 .div-block-3 {
-  height: 80%;
+  height: auto;
   margin-top: 10%;
   margin-right: 10%;
   margin-left: 10%;
@@ -1110,13 +1111,14 @@ img {
   margin-top: -13px;
   margin-bottom: 0px;
   margin-left: 0px;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Montserrat, sans-serif;
   color: #2c2c2c;
   font-size: 18px;
   font-weight: 500;
 }
 
 .subheading.pricing {
+  position: static;
   margin-top: 10px;
   font-size: 24px;
 }
@@ -1171,7 +1173,7 @@ img {
   border-color: #7d7d7d;
   border-radius: 0px;
   background-color: #000;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Montserrat, sans-serif;
   color: #fff;
   font-size: 20px;
   font-weight: 400;
@@ -1192,12 +1194,12 @@ img {
 }
 
 .div-block-10 {
-  margin-left: 10px;
+  margin-left: 0px;
 }
 
 .heading {
   margin-bottom: 0px;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Montserrat, sans-serif;
   color: #2c2c2c;
   font-size: 30px;
 }
@@ -1296,14 +1298,33 @@ img {
   color: #111212;
 }
 
+.section-4 {
+  position: relative;
+  top: 70px;
+  margin-top: 0px;
+}
+
 .heading-10 {
   font-family: Montserrat, sans-serif;
 }
 
 .div-block-17 {
-  height: 75px;
-  min-height: 75px;
+  height: 70px;
+  min-height: 70px;
   margin-top: 0px;
+}
+
+.div-block-18 {
+  position: absolute;
+  left: 0%;
+  top: 70px;
+  right: 0%;
+  bottom: 0%;
+}
+
+.body {
+  height: 100%;
+  font-family: Montserrat, sans-serif;
 }
 
 @media screen and (max-width: 991px) {
