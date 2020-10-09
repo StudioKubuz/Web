@@ -1394,6 +1394,7 @@ img {
     padding-left: 0px;
   }
   .nav1-menu-btn-2 {
+    margin-top: -20px;
     margin-right: 30px;
     padding: 0px;
     background-color: transparent;
@@ -1608,7 +1609,7 @@ img {
     display: none;
   }
   .nav1-2 {
-    margin-top: -16px;
+    margin-top: 0px;
     padding-bottom: 18px;
   }
   .nav1-menu-btn-2 {
@@ -1617,10 +1618,10 @@ img {
     right: 0px;
     bottom: 0px;
     display: block;
-    width: 30px;
+    width: 60px;
     height: 60px;
-    margin-top: -18px;
-    margin-right: 4px;
+    margin-top: -10px;
+    margin-right: 20px;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
@@ -1633,7 +1634,8 @@ img {
   .nav1-menu-btn-2.w--open {
     width: 60px;
     height: 60px;
-    margin-top: 0px;
+    margin-top: -10px;
+    margin-right: 20px;
   }
   .nav1-logo-wrapper-2 {
     display: block;
@@ -1641,6 +1643,8 @@ img {
     padding-left: 0px;
   }
   .nav1-wrap-2 {
+    margin-top: -20px;
+    margin-right: 0px;
     margin-bottom: -9px;
     padding-top: 43px;
     padding-bottom: 0px;
