@@ -1568,9 +1568,10 @@ img {
     text-align: center;
   }
   .logo {
-    display: none;
-    width: 100px;
-    height: 100px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-top: -23px;
   }
   .html-embed {
     display: none;
@@ -1616,9 +1617,10 @@ img {
     right: 0px;
     bottom: 0px;
     display: block;
-    width: 60px;
+    width: 30px;
     height: 60px;
-    margin-top: -1px;
+    margin-top: -18px;
+    margin-right: 4px;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
@@ -1639,8 +1641,9 @@ img {
     padding-left: 0px;
   }
   .nav1-wrap-2 {
-    padding-top: 40px;
-    padding-bottom: 10px;
+    margin-bottom: -9px;
+    padding-top: 43px;
+    padding-bottom: 0px;
   }
   .nav1-menu-wrapper-2 {
     display: block;
@@ -1672,7 +1675,7 @@ img {
     display: block;
     width: 100%;
     height: 40%;
-    margin-top: 0%;
+    margin-top: -10%;
     margin-right: 0px;
   }
   .smalltitle {
@@ -1695,7 +1698,7 @@ img {
     bottom: auto;
     display: block;
     width: 100%;
-    margin-top: 356px;
+    margin-top: 312px;
     padding-top: 0px;
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
