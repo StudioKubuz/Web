@@ -1631,7 +1631,7 @@ img {
   .nav1-menu-btn-2.w--open {
     width: 60px;
     height: 60px;
-    margin-top: -10px;
+    margin-top: 0px;
   }
   .nav1-logo-wrapper-2 {
     display: block;
@@ -1639,8 +1639,8 @@ img {
     padding-left: 0px;
   }
   .nav1-wrap-2 {
-    padding-top: 35px;
-    padding-bottom: 4px;
+    padding-top: 40px;
+    padding-bottom: 10px;
   }
   .nav1-menu-wrapper-2 {
     display: block;
@@ -1719,14 +1719,14 @@ img {
   .slider {
     height: auto;
     margin-right: -20px;
-    margin-left: -25px;
+    margin-left: 0px;
   }
   .div-block-9 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 45%;
+    width: 100%;
     margin-right: 0px;
     margin-bottom: 20px;
     margin-left: 0px;
@@ -1737,7 +1737,7 @@ img {
   }
   .slide-nav {
     margin-top: 0px;
-    margin-bottom: -32px;
+    margin-bottom: 0px;
   }
   .icon {
     display: none;
@@ -1748,13 +1748,14 @@ img {
     padding-right: 0px;
   }
   .div-block-8-copy {
-    width: 100%;
+    width: 50%;
     margin-top: 0px;
     margin-right: 0px;
-    margin-left: 17px;
+    margin-left: 5px;
   }
   .devider {
     margin-top: 7px;
+    margin-left: 0px;
   }
   .slide {
     margin-left: 6px;
@@ -1789,7 +1790,7 @@ img {
     margin-left: -31px;
   }
   .div-block-14 {
-    width: 100%;
+    width: 50%;
     margin-right: 0px;
     margin-left: 0px;
   }
@@ -1799,11 +1800,11 @@ img {
   }
   .div-block-3 {
     margin-top: 0%;
-    margin-left: 12%;
+    margin-left: 5%;
   }
   .subheading {
     margin-top: -8px;
-    margin-left: -17px;
+    margin-left: 0px;
     font-size: 12px;
   }
   .subheading.pricing {
@@ -1850,7 +1851,7 @@ img {
     margin-left: 1px;
   }
   .heading {
-    margin-left: -18px;
+    margin-left: 0px;
     padding-left: 0px;
     font-size: 18px;
     line-height: 20px;
@@ -1863,6 +1864,7 @@ img {
   }
   .mask {
     bottom: 0px;
+    width: 100%;
   }
 }
 
