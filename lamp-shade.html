@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Mon Oct 05 2020 19:59:34 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Fri Oct 09 2020 18:19:41 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5f7a1448a7cca222c4046dc8" data-wf-site="5f7224ca6e10d069d2b754ce">
 <head>
   <meta charset="utf-8">
@@ -28,25 +28,34 @@
 <body class="body">
   <div class="nav">
     <div class="wrap _w-custom nav1-light">
-      <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="nav1-2 w-nav">
+      <div data-collapse="medium" data-animation="default" data-duration="400" data-doc-height="1" data-no-scroll="1" role="banner" class="nav1-2 w-nav">
         <div class="nav1-wrap-2">
           <div class="nav1-logo-wrapper-2"><img src="images/Logo_256-x-256.png" loading="lazy" alt="" class="logo"></div>
           <nav role="navigation" class="nav1-menu-wrapper-2 w-nav-menu"><a href="index.html" class="link-light navigation1-link-light">Home</a><a href="projects.html" class="link-light navigation1-link-light">Projecten</a><a href="configurators.html" class="link-light navigation1-link-light">Configurator</a><a href="https://www.kubuz.net/#Contact" class="btn btn-outline-light w-button">Contact</a></nav>
-          <div class="nav1-menu-btn-2 w-nav-button"><img src="images/menu-icon-dark2x_1menu-icon-dark2x.png" width="18" alt="" class="nav1-menuicon-dark"></div>
+          <div class="nav1-menu-btn-2 w-nav-button">
+            <div data-ix="menu" class="melted w-nav-button">
+              <div class="top-bubble"></div>
+              <div class="middle-bubble"></div>
+              <div class="bottom-bubble"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div class="div-block-18">
     <div class="div-block">
-      <div class="div-block-12">
+      <div class="_3d-model">
+        <div class="html-embed-2 w-embed w-iframe"><iframe width="100%" height="100%" frameborder="0" src="Lamp_Shade_V1.html"></iframe></div>
+      </div>
+      <div class="controls">
         <div class="div-block-3">
-          <h1 class="heading">Custom Lamp Shade</h1>
+          <h3 class="heading">Custom Lamp Shade</h3>
           <h2 id="Dimensions" class="subheading">Dimensions: 250 x 250 x 350 mm</h2>
           <p class="paragraph-3">This beautiful shade is unique and fully designed by you. Adjust the sliders below and chose your favorite colors.<br>Our design team will check everything a last time before entering production. Feel free to experiment as much as you like. </p>
           <div class="devider"></div>
           <div data-animation="slide" data-duration="500" data-infinite="1" class="slider w-slider">
-            <div class="w-slider-mask">
+            <div class="mask w-slider-mask">
               <div class="slide-2 w-slide">
                 <div class="div-block-10">
                   <h3 class="smalltitle">Dimensions:</h3>
@@ -59,7 +68,7 @@
                         </div>
                       </div>
                       <div class="div-block-8-copy">
-                        <h3 class="smalltitle">NUmber of Segments</h3>
+                        <h3 class="smalltitle">Segments</h3>
                         <div class="div-block-6-copy">
                           <div class="html-embed-3 w-embed"><input type="text" id="segments" name="my_range" value="" data-type="single" data-min="4" data-max="50" data-from="24" data-grid="false" step="0.1" skin="square"></div>
                         </div>
@@ -140,9 +149,6 @@
             <h3 class="smalltitle">BuY ON THECUSTOMSHOP.BE</h3>
           </div>
         </div>
-      </div>
-      <div class="_3d-model">
-        <div class="html-embed-2 w-embed w-iframe"><iframe width="100%" height="100%" frameborder="0" src="Lamp_Shade_V1.html"></iframe></div>
       </div>
     </div>
   </div>
